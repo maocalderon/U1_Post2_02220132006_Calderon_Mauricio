@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeReview+ | Revision Pro</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body data-student="02220132006-2026A">
+
+    <header id="seccion-hero">
+        <nav>
+            <ul id="menu-navegacion">
+                <li><a href="#seccion-hero">Inicio</a></li>
+                <li><a href="#seccion-caracteristicas">Funciones</a></li>
+                <li><a href="#seccion-planes">Precios</a></li>
+                <li><button id="boton-tema">🌓 Modo</button></li>
+            </ul>
+        </nav>
+        <div class="contenido-hero">
+            <h1 id="titulo-hero">CodeReview+</h1>
+            <p>Optimiza tu flujo de trabajo con sugerencias inteligentes de seguridad.</p>
+            <button class="btn-revision">Empezar Revision Ahora</button>
+            <div class="hero-image-container">
+                <img src="img/hero-image.png" alt="CodeReview Illustration" class="hero-image">
+            </div>
+        </div>
+    </header>
+
+    <section id="seccion-caracteristicas">
+        <div class="controles-filtro">
+            <button class="filtro-btn" data-cat="Todos">Todos</button>
+            <button class="filtro-btn" data-cat="Core">Core</button>
+            <button class="filtro-btn" data-cat="Integracion">Integracion</button>
+            <button class="filtro-btn" data-cat="Seguridad">Seguridad</button>
+            <span id="contador-visibles">Se muestran: 6 tarjetas</span>
+        </div>
+        <div class="grid-tarjetas">
+            <div class="tarjeta" data-categoria="Seguridad"><i>🔒</i><h3>Escaneo SSL</h3><p>Detecta fallos en certificados.</p></div>
+            <div class="tarjeta" data-categoria="Core"><i>⚙️</i><h3>Analisis Estatico</h3><p>Limpia codigo muerto.</p></div>
+            <div class="tarjeta" data-categoria="Integracion"><i>🔄</i><h3>Git Sync</h3><p>Conecta tus repositorios.</p></div>
+            <div class="tarjeta" data-categoria="Seguridad"><i>🛡️</i><h3>OWASP Check</h3><p>Revision de riesgos Top 10.</p></div>
+            <div class="tarjeta" data-categoria="Core"><i>🚀</i><h3>Refactorizacion</h3><p>Mejora tus patrones logicos.</p></div>
+            <div class="tarjeta" data-categoria="Integracion"><i>📡</i><h3>Webhooks</h3><p>Alertas en tiempo real.</p></div>
+        </div>
+    </section>
+
+    <section id="seccion-planes">
+        <h2 style="text-align: center;">Planes</h2>
+        <div style="text-align: center; margin-bottom: 20px;">
+            <input type="checkbox" id="toggle-precio"> Pago Anual (20% Desc)
+        </div>
+        <div class="planes-grid">
+            <div class="plan"><h3>Gratis</h3><p class="precio" data-base="0">$0</p></div>
+            <div class="plan recomendado"><h3>Pro</h3><p class="precio" data-base="25">$25</p></div>
+            <div class="plan"><h3>Empresa</h3><p class="precio" data-base="80">$80</p></div>
+        </div>
+    </section>
+
+    <footer id="seccion-contacto">
+        <form id="form-contacto">
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            <textarea id="mensaje" placeholder="Mensaje (min 20 carac.)" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="footer-copy">
+            <p>CodeReview+ | 02220132006-2026A | <span id="anio-actual"></span></p>
+        </div>
+    </footer>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>

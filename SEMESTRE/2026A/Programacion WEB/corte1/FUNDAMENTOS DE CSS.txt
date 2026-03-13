@@ -1,0 +1,98 @@
+
+CSS
+son los estilos de html
+
+sintaxia 
+
+selector(
+
+   propiedad: valor;
+     otra - propiedad: otro-valor;
+
+)
+
+tipos de selectores
+
+-elementos   p{}
+-clases
+-id
+-atributo    (type:'texto'
+.descendiente div
+
+especificidad
+
+la razon por la cual css no funciona
+se calcula como(a,b,c,d)
+
+estilos inline
+ids
+clases, atributos, pseudo
+elementos y pseudo
+
+EL BOX MODEL
+
+margin
+   border
+      padding
+         content
+
+
+box- sizing: border.box
+revolucion del css moderno                      con border-bpx
+  sin border .box                                 width
+
+
+margin collapse
+fenomeno: los margenes verticales adyacentes se colapsan
+
+box1{ margin-botom: 30px}
+box2  { margin-top:50px}
+ eso ocurre solo con margenes [top/bottom]
+
+position: static y relative
+
+static (por defecto)                                         relative
+flujo normal del documento                                  se desplaza desde su posicion original
+ignora top. right, bottom , left                              deja espacio en el flujo normal
+
+positio: Absolute y fixed
+
+absolute                                                             fixed
+sale flujo normak                                                  sale del flujo normal
+relativo al anccestro positioned                                   relativo al viewport
+
+
+colores en css2
+
+nombre
+hexadecimal
+rgb
+rgba
+hsl
+
+          tipografia web
+font.family:arial, sans-serif
+font-size, san.serif
+
+unidades: px,em,rem,%
+px   pixeles
+em       relativo al font-size del padre
+rem      relativo al font.size del <html>
+%         porcentaje del contenedor padre
+
+
+estilos de formulario
+
+introducuion a flexbox
+
+sistema de layout unidimensional (filas o columnas)
+contenedores flez- display: flex
+items flex- hijos directos
+eje princioal (main axis)
+eje cruzados(cross axis)
+
+
+transformaciones 2D
+/* traslacion*/
+
+

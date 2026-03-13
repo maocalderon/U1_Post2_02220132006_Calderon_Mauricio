@@ -1,0 +1,9 @@
+verbo infinitivo + que es+ nombre de la empresa y lugar + para que
+
+
+Entregables 
+[cantidad]+[sustantivo, nombre del producto]+[descripcion: quee es]
+
+alcance
+el entregable cuenta + consiste , componentes  funcionalidades que integren el producto+ lenguajes o detalles especificos+  para que debe servir 
+

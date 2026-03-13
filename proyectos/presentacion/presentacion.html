@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Tarjeta de Presentación</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="light-mode">
+
+    <header id="inicio">
+        <nav id="navbar">
+            <div class="nav-content">
+                <h1>esteban mauricio calderon bayona</h1>
+                <p class="tagline">ingeniero en sistema en formacion</p>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#quien-soy">¿Quién soy?</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <button id="theme-toggle">🌓 Modo</button>
+            </div>
+        </nav>
+    </header>
+
+    <section id="quien-soy" class="container">
+        <h2>¿Quién soy?</h2>
+        <div class="intro-text">
+            <p>
+                Soy un estudiante apasionado por la tecnología y el desarrollo de proyectos de investigación. Actualmente me encuentro cursando el semestre 7 en la Universidad de Santander, trabajo los fines de semana como mesero en restaurante muy popular de Cúcuta
+            </p>
+            <div id="extra-content" class="hidden">
+                <p>Este es el parrafo adicional que se oculta y se muestra mediante el botón de lectura.</p>
+            </div>
+            <button id="read-more">Leer más</button>
+        </div>
+
+        <div class="personal-data">
+            <h3>Datos Personales</h3>
+            <ul>
+                <li> Ciudad: Cúcuta</li>
+                <li> Carrera: Ingeniería de Sistemas</li>
+                <li> Semestre: 7to</li>
+                <li> Idiomas: Español</li>
+                <li> Contacto: mauriciocalderon899@gmail.com</li>
+            </ul>
+        </div>
+
+        <div class="curiosidades">
+            <h3>Datos Curiosos</h3>
+            <ul>
+                <li>Fanático de los videojuegos</li>
+                <li>Me encanta ver fútbol</li>
+                <li>Ver anime</li>
+            </ul>
+        </div>
+
+        <div class="skills-levels">
+            <h3>Nivel de Dominio</h3>
+            <div class="skill-bar"><span>HTML/CSS</span><div class="progress" style="width: 90%;"></div></div>
+            <div class="skill-bar"><span>JavaScript</span><div class="progress" style="width: 75%;"></div></div>
+            <div class="skill-bar"><span>UI Design</span><div class="progress" style="width: 60%;"></div></div>
+            <div class="skill-bar"><span>Python</span><div class="progress" style="width: 50%;"></div></div>
+        </div>
+    </section>
+
+    <section id="habilidades" class="container">
+        <h2>Habilidades e Intereses</h2>
+        <div class="filter-controls">
+            <button class="filter-btn" data-cat="all">Mostrar todas</button>
+            <button class="filter-btn" data-cat="tecnico">Tecnico</button>
+            <button class="filter-btn" data-cat="personal">Personal</button>
+            <button class="filter-btn" data-cat="academico">Académico</button>
+            <span id="counter">Mostrando: 6 tarjetas</span>
+        </div>
+
+        <div class="grid-container">
+            <div class="card tecnico">
+                <i class="icon">💻</i>
+                <h4>Programación</h4>
+                <p>Domino algunos lenguajes.</p>
+            </div>
+            <div class="card personal"><h4>Hobby1</h4><p>me encanta jugar videojuegos en mis tiempos libres.</p></div>
+            <div class="card academico"><h4>Investigación</h4><p>me encanta las noticias de homicidios.</p></div>
+            <div class="card tecnico"><h4>Bases de Datos</h4><p>Me gusta usar la biblioteca de la universidad.</p></div>
+            <div class="card personal"><h4>Deportes</h4><p>Soy fanático del equipo de fútbol FC Barcelona.</p></div>
+            <div class="card academico"><h4>Matemáticas</h4><p>Odio las matemáticas.</p></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Tu Esteban mauricio calderon bayona &copy; 2026</p>
+        <p><em>"el esfuerzo de hoy es el resultado de mañana"</em></p>
+        <ul class="footer-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#quien-soy">¿Quién soy?</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+        </ul>
+        <button id="scroll-top">⬆️</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

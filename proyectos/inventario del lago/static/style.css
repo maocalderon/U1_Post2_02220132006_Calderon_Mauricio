@@ -1,0 +1,83 @@
+:root {
+    --bg-body: #f4f7f6;
+    --bg-card: #ffffff;
+    --primary-color: #1a365d; 
+    --secondary-color: #2b6cb0;
+    --accent-color: #10b981; 
+    --text-main: #2d3748;
+    --text-muted: #718096;
+    --border-color: #e2e8f0;
+    --row-even: #f8fafc;
+    --row-hover: #ebf8ff;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-body);
+    color: var(--text-main);
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* --- ESTILOS DEL LOGIN --- */
+.login-box {
+    background-color: white; padding: 40px; border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); width: 100%; max-width: 400px; text-align: center;
+}
+.logo-login { width: 100px; height: auto; border-radius: 50%; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); margin-bottom: 15px; }
+.login-box h1 { color: var(--primary-color); font-size: 26px; margin-top: 0; margin-bottom: 5px; }
+.login-box p { color: var(--text-muted); margin-bottom: 30px; font-size: 15px; }
+.input-group { margin-bottom: 20px; text-align: left; }
+.input-group label { display: block; margin-bottom: 8px; font-weight: 600; color: var(--text-main); font-size: 14px; }
+input[type="text"], input[type="password"] {
+    width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: 8px;
+    font-family: 'Inter'; font-size: 15px; box-sizing: border-box; transition: 0.2s;
+}
+input[type="text"]:focus, input[type="password"]:focus { outline: none; border-color: var(--secondary-color); box-shadow: 0 0 0 3px rgba(43, 108, 176, 0.2); }
+.btn-login {
+    background-color: var(--primary-color); color: white; width: 100%; padding: 14px; border: none;
+    border-radius: 8px; font-weight: 600; font-size: 16px; cursor: pointer; transition: 0.2s;
+}
+.btn-login:hover { background-color: var(--secondary-color); transform: translateY(-2px); }
+.error { color: #e53e3e; background-color: #fff5f5; padding: 10px; border-radius: 8px; margin-bottom: 20px; font-size: 14px; font-weight: 500; }
+
+/* --- ESTILOS DEL INVENTARIO --- */
+.contenedor {
+    background-color: var(--bg-card); width: 100%; max-width: 1100px;
+    border-radius: 16px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05); padding: 40px;
+}
+.cabecera { 
+    text-align: left; margin-bottom: 30px; display: flex; align-items: center; justify-content: center; gap: 20px; 
+}
+.logo-encabezado { width: 80px; height: auto; border-radius: 50%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); }
+.cabecera div { display: flex; flex-direction: column; }
+.cabecera h1 { color: var(--primary-color); font-size: 32px; font-weight: 700; margin-bottom: 8px; }
+.cabecera .subtitulo { color: var(--text-muted); font-size: 16px; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; }
+
+.tabla-responsive { width: 100%; overflow-x: auto; border-radius: 10px; border: 1px solid var(--border-color); }
+table { width: 100%; border-collapse: collapse; background-color: white; text-align: center; }
+th { background-color: var(--primary-color); color: white; font-weight: 600; font-size: 14px; padding: 16px 12px; }
+td { padding: 14px 12px; font-size: 15px; border-bottom: 1px solid var(--border-color); vertical-align: middle; }
+tbody tr:nth-child(even) { background-color: var(--row-even); }
+tbody tr:hover { background-color: var(--row-hover); }
+
+.col-producto { text-align: left; font-weight: 600; color: var(--primary-color); }
+.resaltado { font-weight: 700; font-size: 16px; color: #047857; background-color: #d1fae5; border-radius: 6px; }
+
+input[type="number"] {
+    width: 75px; padding: 10px; text-align: center; border: 1px solid #cbd5e0;
+    border-radius: 6px; font-family: 'Inter', sans-serif; font-size: 15px;
+    color: var(--text-main); background-color: #f8fafc; transition: all 0.2s;
+}
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+input[type="number"]:focus { outline: none; border-color: var(--secondary-color); box-shadow: 0 0 0 3px rgba(43, 108, 176, 0.2); background-color: white; }
+
+.acciones { display: flex; justify-content: flex-end; margin-top: 25px; }
+.btn-guardar {
+    background-color: var(--accent-color); color: white; border: none; padding: 14px 28px;
+    font-size: 16px; font-weight: 600; border-radius: 8px; cursor: pointer; transition: all 0.2s;
+}
+.btn-guardar:hover { background-color: #059669; transform: translateY(-2px); box-shadow: 0 6px 15px rgba(16, 185, 129, 0.4); }

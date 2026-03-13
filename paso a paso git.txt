@@ -1,0 +1,59 @@
+paso 1 crear una carpeta
+
+mkdir nombre de la carpeta
+
+paso 2 acceder a la carpeta
+cd nombre de la carpeta
+
+paso 3 crea el httml
+ touch nombre del arvhivp
+
+paso 4  crear el git para rastrear tus archivos y puedan subirlo gu
+git init
+
+paso5 abrir el visual desde hit
+code .
+
+paso 6 con esto creo el html
+touch formulario.html
+
+
+ahora para subir de git a github
+
+codigo para subir el documento y el formulario
+git add formulario.html Documento_Pruebas.pdf
+
+Crea el mensaje de confirmación
+git commit -m "Entrega final: Formulario HTML5 y Documento de Pruebas"
+
+
+Agrega todos los archivos nuevos o modificados de una vez
+git add .
+
+# Verifica si se agregaron (deben salir en verde)
+git status
+
+
+# Crea el guardado oficial
+git commit -m "Entrega: formulario.html y Documento_Pruebas.pdf"
+
+# Sube los archivos a tu repositorio
+git push origin main
+
+# 3. Asegura que la rama se llame main
+git branch -M main
+
+# 4. Conecta con tu repositorio (¡Verifica que el nombre sea el de la Post2!)
+git remote add origin https://github.com/maocalderon/Calderon_Mauricio_02220132006_U2_Post2.git
+
+
+con este codigo creo la carpeta o las clases
+mkdir -p src/original
+mkdir -p src/refactored
+
+
+# 4. Crea los archivos iniciales
+touch src/original/OrderManager.java
+touch README.md
+
+
